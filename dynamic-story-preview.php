@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Dynamic Story Preview
-Plugin URI: https://github.com/bibhu-p
+Plugin URI: https://github.com/bibhu-p/wp-dynamic-story-preview
 Description: A plugin to create expandable previews for stories.
 Version: 1.0
 Author: Bibhu Prasad
@@ -30,6 +30,7 @@ function dsp_preview_shortcode($atts, $content = null) {
 }
 add_shortcode('dsp_preview', 'dsp_preview_shortcode');
 
+// enqueued the js file
 function dsp_enqueue_scripts() {
     wp_enqueue_script('dsp-script', plugin_dir_url(__FILE__) . 'assets/js/script.js', array('jquery'), null, true);
 }
