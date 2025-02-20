@@ -1,0 +1,13 @@
+.dsp-read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #0073aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.dsp-read-more:hover {
+    background-color: #005177;
+}
