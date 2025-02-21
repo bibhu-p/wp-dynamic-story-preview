@@ -22,10 +22,10 @@ require_once plugin_dir_path(__FILE__) . 'admin/settings.php';
 function dsp_add_custom_preview_meta_box() {
     add_meta_box(
         'dsp_custom_preview_meta_box',
-        'Custom Story Preview',
+        'Story Preview',
         'dsp_custom_preview_meta_box_callback',
         'post',
-        'side',
+        'advanced',
         'default'
     );
 }
