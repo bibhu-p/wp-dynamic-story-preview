@@ -59,7 +59,7 @@ function dsp_save_custom_preview($post_id) {
 add_action('save_post', 'dsp_save_custom_preview');
 
 // ============================
-// 3️⃣ MODIFY EXCERPT TO SHOW CUSTOM PREVIEW
+//  MODIFY EXCERPT TO SHOW CUSTOM PREVIEW
 // ============================
 function dsp_modify_excerpt($excerpt) {
     global $post;
@@ -81,7 +81,7 @@ function dsp_modify_excerpt($excerpt) {
 }
 add_filter('the_excerpt', 'dsp_modify_excerpt');
 // ============================
-// 4️⃣ ENQUEUE STYLES & JAVASCRIPT
+// ENQUEUE STYLES & JAVASCRIPT
 // ============================
 function dsp_enqueue_scripts() {
     wp_enqueue_style('dsp-style', plugin_dir_url(__FILE__) . 'assets/css/style.css');
@@ -90,7 +90,7 @@ function dsp_enqueue_scripts() {
 add_action('wp_enqueue_scripts', 'dsp_enqueue_scripts');
 
 // ============================
-// 5️⃣ ADD SHORTCODE SUPPORT
+// ADD SHORTCODE SUPPORT
 // ============================
 function dsp_preview_shortcode($atts, $content = null) {
     global $post;
